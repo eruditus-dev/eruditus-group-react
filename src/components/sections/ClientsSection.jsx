@@ -25,7 +25,7 @@ const ClientsSection = () => {
             }}
             transition={{
               ease: 'linear',
-              duration: 120,
+              duration: 50,
               repeat: Infinity,
             }}
           >
