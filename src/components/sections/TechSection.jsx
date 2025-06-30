@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -25,8 +24,8 @@ const TechSection = () => {
   const duplicatedTechs = [...technologies, ...technologies];
 
   return (
-    <section className="py-20 px-4 overflow-hidden">
-      <div className="container mx-auto mb-6">
+    <section className="py-20 px-2 sm:px-4 md:px-6 overflow-hidden">
+      <div className="container mx-auto max-w-6xl mb-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
