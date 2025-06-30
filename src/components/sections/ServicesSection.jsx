@@ -6,7 +6,7 @@ import { services } from '@/data/servicesData';
 
 const ServicesSection = () => {
   return (
-    <section id="servicios" className="py-20 px-6">
+    <section id="servicios" className="py-10 px-6">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
