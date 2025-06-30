@@ -2,9 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useToast } from '@/components/ui/use-toast';
 
 const HeroSection = () => {
-  const whatsappURL = "https://wa.me/573001112233?text=Hola%2C%20quiero%20empezar%20un%20proyecto%20con%20ustedes";
+  const { toast } = useToast();
+
+  const handleContactClick = () => {
+    toast({
+      title: "🚧 Esta función aún no está implementada",
+      description: "¡Pero no te preocupes! Puedes solicitarla en tu próximo prompt! 🚀",
+    });
+  };
 
   return (
     <section className="relative py-28 md:py-40 px-6 overflow-hidden">
@@ -34,33 +42,20 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button
-              asChild
+            <Button 
+              onClick={handleContactClick}
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:shadow-xl hover:shadow-purple-500/20 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300"
             >
-              <a
-                href={whatsappURL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5 inline" />
-              </a>
+              Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-
-            <Button
-              asChild
+            <Button 
+              onClick={handleContactClick}
               variant="outline"
               size="lg"
               className="border-white/20 text-white/80 hover:bg-white/10 hover:text-white px-8 py-6 text-base rounded-full transition-all duration-300"
             >
-              <a
-                href={whatsappURL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver Portfolio
-              </a>
+              Ver Portfolio
             </Button>
           </motion.div>
         </div>

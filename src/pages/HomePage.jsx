@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import HeroSection from '@/components/sections/HeroSection';
 import StatsSection from '@/components/sections/StatsSection';
 import ClientsSection from '@/components/sections/ClientsSection';
 import ServicesSection from '@/components/sections/ServicesSection';
+import TechSection from '@/components/sections/TechSection';
 import AboutSection from '@/components/sections/AboutSection';
 import CTASection from '@/components/sections/CTASection';
 
@@ -18,6 +20,7 @@ const HomePage = () => {
       <StatsSection />
       <ClientsSection />
       <ServicesSection />
+      <TechSection />
       <AboutSection />
       <CTASection />
     </>

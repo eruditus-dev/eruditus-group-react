@@ -7,7 +7,7 @@ import Logo from '@/components/Logo';
 import SubMenu from '@/components/layout/SubMenu';
 import MobileMenu from '@/components/layout/MobileMenu';
 import { services } from '@/data/servicesData';
-import { Menu, ChevronDown } from 'lucide-react';
+import { Menu, ChevronDown, Home } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -74,6 +74,15 @@ const Header = () => {
               transition={{ duration: 0.5 }}
               className="hidden md:flex items-center space-x-8"
             >
+              <Link 
+                to="/" 
+                className="flex items-center space-x-2 text-white/70 hover:text-white transition-colors duration-300"
+                onClick={closeSubMenu}
+              >
+                <Home className="w-4 h-4" />
+                <span>Inicio</span>
+              </Link>
+
               <div 
                 className="relative"
                 onMouseEnter={() => setIsSubMenuOpen(true)}

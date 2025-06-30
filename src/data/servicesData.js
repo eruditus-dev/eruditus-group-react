@@ -14,7 +14,7 @@ export const services = [
         { icon: Wrench, title: "Totalmente Personalizado", description: "Diseños y funcionalidades a medida que reflejan la identidad única de tu marca." },
         { icon: BarChart, title: "Preparado para Crecer", description: "Arquitecturas escalables que se adaptan al crecimiento de tu empresa." }
       ],
-      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/desarrollo-a-la-medida.svg"
+      imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0"
     }
   },
   {
@@ -30,7 +30,7 @@ export const services = [
         { icon: Wrench, title: "Adaptabilidad Total", description: "Una solución que se amolda a tus flujos de trabajo, no al revés." },
         { icon: BarChart, title: "Inteligencia de Negocio", description: "Obtén datos valiosos para tomar decisiones estratégicas." }
       ],
-      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/soluciones.svg"
+      imageUrl: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
     }
   },
   {
@@ -62,7 +62,7 @@ export const services = [
         { icon: Wrench, title: "Autoridad de Marca", description: "Conviértete en un referente en tu industria." },
         { icon: BarChart, title: "ROI Medible", description: "Estrategias basadas en datos para un retorno de inversión claro." }
       ],
-      imageUrl: "https://eruditus-assets.eruditus.cloud/optimizacion_en_seo.jpg"
+      imageUrl: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23"
     }
   },
   {
@@ -78,7 +78,7 @@ export const services = [
         { icon: Wrench, title: "Nutrición de Leads", description: "Guía a los prospectos a través del embudo de ventas de forma automática." },
         { icon: BarChart, title: "ROI Excepcional", description: "El email marketing sigue siendo uno de los canales con mayor retorno de inversión." }
       ],
-      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/mensajeria.svg"
+      imageUrl: "https://images.unsplash.com/photo-1586953208448-3151cf794715"
     }
   },
   {
@@ -100,7 +100,7 @@ export const services = [
   {
     slug: "desarrollo-wp",
     icon: Layers,
-    title: "Desarrollo WordPress a la Medida",
+    title: "Desarrollo WP a la Medida",
     description: "Plugins y temas de WordPress personalizados para tus necesidades.",
     features: ["Desarrollo de Temas", "Creación de Plugins", "Integración con APIs", "Mantenimiento WP"],
     details: {
@@ -110,7 +110,7 @@ export const services = [
         { icon: Wrench, title: "Control Total", description: "Un tema diseñado desde cero para tu marca, sin código innecesario." },
         { icon: BarChart, title: "Integración Perfecta", description: "Conecta WordPress con tus sistemas y APIs externas sin problemas." }
       ],
-      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/wordpress.svg"
+      imageUrl: "https://images.unsplash.com/photo-1599658880122-ac55a3a99c44"
     }
   },
   {
@@ -174,7 +174,7 @@ export const services = [
         { icon: Wrench, title: "Reducción de Carga", description: "Libera a tu equipo humano para que se enfoque en tareas de alto valor." },
         { icon: BarChart, title: "Generación de Leads", description: "Califica prospectos y agenda reuniones de forma automática." }
       ],
-      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/chat.svg"
+      imageUrl: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
     }
   }
 ];
@@ -183,5 +183,5 @@ export const stats = [
   { number: "500+", label: "Proyectos Completados" },
   { number: "98%", label: "Satisfacción del Cliente" },
   { number: "24/7", label: "Soporte Técnico" },
-  { number: "15+", label: "Años de Experiencia" }
+  { number: "5+", label: "Años de Experiencia" }
 ];

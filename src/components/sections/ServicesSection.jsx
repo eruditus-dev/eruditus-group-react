@@ -31,9 +31,14 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05, ease: "easeOut" }}
+              className="h-full"
             >
-              <Link to={`/servicio/${service.slug}`} className="group block h-full">
-                <div className="bg-[#1c1c1e] rounded-2xl p-6 h-full flex flex-col border border-transparent group-hover:border-purple-500/30 group-hover:bg-[#222224] transition-all duration-300">
+              <Link
+                to={`/servicio/${service.slug}`}
+                className="group block h-full rounded-2xl p-px relative bg-[#1c1c1e] overflow-hidden"
+              >
+                <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#a855f7_0%,#e92a67_50%,#a855f7_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative bg-[#1c1c1e] rounded-[calc(1rem-1px)] p-6 h-full flex flex-col group-hover:bg-[#222224] transition-colors duration-300">
                   <div className="flex-shrink-0 mb-4">
                     <div className="p-3 inline-block bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl">
                       <service.icon className="h-6 w-6 text-white" />

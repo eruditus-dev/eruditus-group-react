@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { X } from 'lucide-react';
+import { X, Home } from 'lucide-react';
 import Logo from '@/components/Logo';
 import { Button } from '@/components/ui/button';
 
@@ -34,11 +34,19 @@ const MobileMenu = ({ isOpen, setIsOpen, services, handleContactClick }) => {
           </div>
           
           <nav className="flex flex-col space-y-6 text-center">
+            <Link 
+              to="/" 
+              onClick={handleLinkClick} 
+              className="flex items-center justify-center space-x-2 text-2xl font-bold text-white hover:text-pink-500 transition-colors"
+            >
+              <Home className="w-6 h-6" />
+              <span>Inicio</span>
+            </Link>
             <a href="/#nosotros" onClick={handleLinkClick} className="text-2xl font-bold text-white hover:text-pink-500 transition-colors">Nosotros</a>
             <a href="/#contacto" onClick={handleLinkClick} className="text-2xl font-bold text-white hover:text-pink-500 transition-colors">Contacto</a>
             
             <div className="pt-6 border-t border-white/10">
-                <p className="text-pink-500 font-bold mb-4 text-sm tracking-wider uppercase">Servicios</p>
+                <p className="text-pink-500 font-bold mb-4 text-sm tracking-wider">Servicios</p>
                 <div className="flex flex-col space-y-4">
                     {services.map((service) => (
                         <Link 
