@@ -14,7 +14,7 @@ export const services = [
         { icon: Wrench, title: "Totalmente Personalizado", description: "Diseños y funcionalidades a medida que reflejan la identidad única de tu marca." },
         { icon: BarChart, title: "Preparado para Crecer", description: "Arquitecturas escalables que se adaptan al crecimiento de tu empresa." }
       ],
-      imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0"
+      imageUrl: "https://eruditus-assets.eruditus.cloud/desarrollo.png"
     }
   },
   {
@@ -30,7 +30,7 @@ export const services = [
         { icon: Wrench, title: "Adaptabilidad Total", description: "Una solución que se amolda a tus flujos de trabajo, no al revés." },
         { icon: BarChart, title: "Inteligencia de Negocio", description: "Obtén datos valiosos para tomar decisiones estratégicas." }
       ],
-      imageUrl: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+      imageUrl: "https://eruditus-assets.eruditus.cloud/ecommerce.png"
     }
   },
   {
@@ -62,7 +62,7 @@ export const services = [
         { icon: Wrench, title: "Autoridad de Marca", description: "Conviértete en un referente en tu industria." },
         { icon: BarChart, title: "ROI Medible", description: "Estrategias basadas en datos para un retorno de inversión claro." }
       ],
-      imageUrl: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23"
+      imageUrl: "https://eruditus-assets.eruditus.cloud/optimizacion_en_seo.jpg"
     }
   },
   {
@@ -94,7 +94,7 @@ export const services = [
         { icon: Wrench, title: "Mejor Ranking SEO", description: "La velocidad es un factor clave para Google. Sube en los resultados de búsqueda." },
         { icon: BarChart, title: "Mayor Conversión", description: "Un sitio rápido mantiene a los usuarios enganchados y aumenta las conversiones." }
       ],
-      imageUrl: "https://images.unsplash.com/photo-1607703703520-bb2a8e355121"
+      imageUrl: "https://eruditus-assets.eruditus.cloud/optimizacion_en_seo.jpg"
     }
   },
   {
