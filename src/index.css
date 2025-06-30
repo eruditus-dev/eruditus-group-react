@@ -76,11 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 *:focus-visible {
   outline: 2px solid hsl(var(--primary) / 0.5);
   outline-offset: 2px;
-  border-radius: 0.25rem;
+  border-radius: 0.1rem;
 }
 
 .scroller {
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
