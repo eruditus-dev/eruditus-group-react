@@ -56,10 +56,10 @@ const TechSection = () => {
                 <img 
                   src={tech.logo} 
                   alt={`Logo de ${tech.name}`}
-                  className="w-12 h-12 object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300"
+                  className="w-12 h-12 object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-100"
                 />
               </div>
-              <p className="text-center text-sm text-white/60 mt-3 group-hover:text-white/80 transition-colors duration-300">
+              <p className="text-center text-sm text-white/60 mt-3 group-hover:text-white/80 transition-colors duration-100">
                 {tech.name}
               </p>
             </motion.div>
