@@ -127,24 +127,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes glowPulse {
+@keyframes colorfulShadow {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
-                 0 0 20px rgba(255, 255, 255, 0.2),
-                 0 0 40px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa; /* azul */
+  }
+  25% {
+    text-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc; /* púrpura */
   }
   50% {
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4),
-                 0 0 30px rgba(255, 255, 255, 0.3),
-                 0 0 60px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px #f472b6, 0 0 20px #f472b6; /* rosa */
+  }
+  75% {
+    text-shadow: 0 0 10px #facc15, 0 0 20px #facc15; /* dorado */
   }
   100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
-                 0 0 20px rgba(255, 255, 255, 0.2),
-                 0 0 40px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa; /* vuelta a azul */
   }
 }
 
-.animated-glow-text {
-  animation: glowPulse 6s ease-in-out infinite;
+.animated-shadow-gradient {
+  animation: colorfulShadow 8s ease-in-out infinite;
 }
