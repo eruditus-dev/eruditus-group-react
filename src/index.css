@@ -127,40 +127,46 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes animatedGradient {
+@keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
     background-image: linear-gradient(
       270deg,
-      #60a5fa,   /* Azul suave */
-      #a78bfa,   /* Morado claro */
-      #6ee7b7    /* Verde claro */
+      #ffffff,
+      #a855f7,
+      #ec4899,
+      #facc15,
+      #06b6d4
     );
   }
   50% {
     background-position: 100% 50%;
     background-image: linear-gradient(
       270deg,
-      #6ee7b7,
-      #a78bfa,
-      #60a5fa
+      #06b6d4,
+      #facc15,
+      #ec4899,
+      #a855f7,
+      #ffffff
     );
   }
   100% {
     background-position: 0% 50%;
     background-image: linear-gradient(
       270deg,
-      #60a5fa,
-      #a78bfa,
-      #6ee7b7
+      #ffffff,
+      #a855f7,
+      #ec4899,
+      #facc15,
+      #06b6d4
     );
   }
 }
 
 .animated-gradient-text {
-  background-size: 300% 300%;
+  background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: animatedGradient 8s ease-in-out infinite;
+  animation: gradient-shift 8s ease infinite;
 }
