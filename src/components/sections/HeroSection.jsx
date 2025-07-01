@@ -18,17 +18,14 @@ const HeroSection = () => {
     <section className="relative py-28 md:py-40 px-6 overflow-hidden">
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 
-                       bg-gradient-to-r from-white via-purple-300 to-pink-300 
-                       bg-clip-text text-transparent tracking-tighter 
-                       animate-gradient bg-[length:200%_200%]"
-          >
-            Soluciones Digitales de Vanguardia
-          </motion.h1>
+<motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tighter animated-gradient-text"
+>
+  Soluciones Digitales de Vanguardia
+</motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
