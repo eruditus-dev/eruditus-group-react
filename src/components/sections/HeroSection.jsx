@@ -22,7 +22,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 bg-gradient-to-r from-white via-purple-300 to-pink-300 bg-clip-text text-transparent tracking-tighter"
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 
+                       bg-gradient-to-r from-white via-purple-300 to-pink-300 
+                       bg-clip-text text-transparent tracking-tighter 
+                       animate-gradient bg-[length:200%_200%]"
           >
             Soluciones Digitales de Vanguardia
           </motion.h1>
