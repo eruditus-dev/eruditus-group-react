@@ -14,6 +14,7 @@ const HeroSection = () => {
     });
   };
 
+
   return (
     <section className="relative py-28 md:py-40 px-6 overflow-hidden">
       <div className="container mx-auto relative z-10">
