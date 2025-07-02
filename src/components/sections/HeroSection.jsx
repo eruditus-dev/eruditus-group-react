@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-black">
       {/* Fondo animado de código */}
-      <div className="absolute inset-0 z-0 opacity-10 text-green-400 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden animate-pulse-slow pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-10 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden animate-pulse-slow pointer-events-none">
         <div className="absolute w-full h-full animate-scroll-code">
           {`const digital = () => {
   return "future";
