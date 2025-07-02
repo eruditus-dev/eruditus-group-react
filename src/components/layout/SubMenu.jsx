@@ -9,7 +9,7 @@ const SubMenu = ({ services, closeSubMenu }) => {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
+      transition={{ duration: 0.15, ease: "easeOut" }}
       className="absolute top-full left-0 right-0 bg-gradient-to-b from-[#1e0033] to-[#10001a] border-b border-white/10 shadow-2xl"
     >
       <div className="container mx-auto px-6 py-12">
