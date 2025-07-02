@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const ClientsSection = () => {
   const clients = [
     { name: 'Legis', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Legis_logo.png' },
-    { name: 'Geomatrix', logo: 'https://geomatrix.co/logo.svg' },
+    { name: 'Geomatrix', logo: 'https://eruditus-assets.ams3.digitaloceanspaces.com/geomatrix.png' },
     { name: 'Solfluinco', logo: 'https://solfluinco.com/logo.png' },
     { name: 'Guio', logo: 'https://guio.com.co/logo.svg' },
     { name: 'Chimeneas el chalet', logo: 'https://chimeneaselchalet.com/logo.png' },
@@ -23,7 +23,7 @@ const ClientsSection = () => {
     { name: 'Creativetime360', logo: 'https://creativetime360.com/logo.png' },
     { name: 'Mamanunzia', logo: 'https://mamanunzia.com/logo.svg' },
     { name: 'Flaminio Angulo', logo: 'https://flaminioangulo.com/logo.svg' },
-    { name: 'Alteca Calefacción', logo: 'https://alteca.com/logo.svg' },
+    { name: 'Alteca Calefacción', logo: 'https://eruditus-assets.ams3.digitaloceanspaces.com/alteca.png' },
     { name: 'M3 Automatismos', logo: 'https://m3automatismos.com/logo.svg' },
     { name: 'Tecsil', logo: 'https://tecsil.com/logo.png' },
     { name: 'Atráeme', logo: 'https://atraeme.com.co/logo.png' }
