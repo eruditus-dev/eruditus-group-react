@@ -26,13 +26,13 @@ const ClientsSection = () => {
   const duplicatedClients = [...clients, ...clients];
 
   return (
-    <section className="py-20 px-2 sm:px-4 md:px-6 overflow-hidden">
+    <section className="py-2 px-2 sm:px-4 md:px-6 overflow-hidden">
       <div className="container mx-auto max-w-6xl mb-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="text-center"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent tracking-tighter">
