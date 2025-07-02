@@ -63,7 +63,7 @@ const ClientsSection = () => {
 <img 
   src={client.logo} 
   alt={`Logo de ${client.name}`}
-  className="max-w-[200px] h-auto object-contain mx-auto filter brightness-90 group-hover:brightness-110 transition-all duration-100"
+  className="max-w-[220px] h-auto aspect-[3/1] object-contain mx-auto filter brightness-90 group-hover:brightness-110 transition-all duration-100"
 />
               </div>
               <p className="text-center text-sm text-white/60 mt-3 group-hover:text-white/80 transition-colors duration-100">
