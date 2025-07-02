@@ -30,10 +30,12 @@ const ClientsSection = () => {
             }}
           >
             <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Legis">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Legis" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
+              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Legis" src="https://eruditus-assets.ams3.digitaloceanspaces.com/e0a51ffbbd20ed2827bc40568faa18fe.jpg
+" />
             </div>
             <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Geomatrix">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Geomatrix" src="https://images.unsplash.com/photo-1646939222913-1cba94051fe3" />
+              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Geomatrix" src="https://eruditus-assets.ams3.digitaloceanspaces.com/f6dd5e30958f3f32c8e2501e3d5c564d.jpg
+" />
             </div>
             <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Solfluinco">
               <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Solfluinco" src="https://images.unsplash.com/photo-1636114673156-052a83459fc1" />
