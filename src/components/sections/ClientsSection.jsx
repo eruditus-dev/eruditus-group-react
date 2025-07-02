@@ -53,7 +53,7 @@ const ClientsSection = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <div className="w-2 h-2 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 flex items-center justify-center group-hover:bg-white/10 group-hover:border-purple-500/30 transition-all duration-300">
+              <div className="w-20 h-20 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 flex items-center justify-center group-hover:bg-white/10 group-hover:border-purple-500/30 transition-all duration-300">
 <img 
   src={client.logo} 
   alt={`Logo de ${client.name}`}
@@ -67,8 +67,8 @@ const ClientsSection = () => {
           ))}
         </div>
 
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-r from-background to-transparent pointer-events-none z-20"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-l from-background to-transparent pointer-events-none z-20"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-r from-background to-transparent pointer-events-none z-2"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-l from-background to-transparent pointer-events-none z-2"></div>
       </div>
     </section>
   );
