@@ -27,7 +27,7 @@ const ClientsSection = () => {
 
   return (
     <section className="py-2 px-2 sm:px-4 md:px-6 overflow-hidden">
-      <div className="container mx-auto max-w-6xl mb-16">
+      <div className="container mx-auto max-w-6xl mb-1">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,8 +67,8 @@ const ClientsSection = () => {
           ))}
         </div>
 
-        <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-background to-transparent pointer-events-none z-20"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-background to-transparent pointer-events-none z-20"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-r from-background to-transparent pointer-events-none z-20"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-l from-background to-transparent pointer-events-none z-20"></div>
       </div>
     </section>
   );
