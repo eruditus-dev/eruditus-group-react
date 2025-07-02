@@ -14,19 +14,38 @@ const HeroSection = () => {
     });
   };
 
-
   return (
-    <section className="relative py-28 md:py-40 px-6 overflow-hidden">
+    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-black">
+      {/* Fondo animado de código */}
+      <div className="absolute inset-0 z-0 opacity-10 text-green-400 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden animate-pulse-slow pointer-events-none">
+        <div className="absolute w-full h-full animate-scroll-code">
+          {`const digital = () => {
+  return "future";
+};
+
+function transform(idea) {
+  return idea + " ✨ experiencia";
+}
+
+const client = {
+  nombre: "Empresa Innovadora",
+  proyecto: "Solución Web",
+};
+
+console.log("Construyendo soluciones...🚀");`}
+        </div>
+      </div>
+
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-<motion.h1
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tighter animated-gradient-text"
->
-  Soluciones Digitales de Vanguardia
-</motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tighter animated-gradient-text"
+          >
+            Soluciones Digitales de Vanguardia
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -61,6 +80,17 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* Estilos adicionales para animación de fondo */}
+      <style jsx>{`
+        @keyframes scroll-code {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-100%); }
+        }
+        .animate-scroll-code {
+          animation: scroll-code 20s linear infinite;
+        }
+      `}</style>
     </section>
   );
 };
