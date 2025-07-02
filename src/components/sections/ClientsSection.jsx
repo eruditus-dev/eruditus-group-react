@@ -60,11 +60,11 @@ const ClientsSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <div className="w-20 h-20 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 flex items-center justify-center group-hover:bg-white/10 group-hover:border-purple-500/30 transition-all duration-300">
-                <img 
-                  src={client.logo} 
-                  alt={`Logo de ${client.name}`}
-                  className="w-12 h-12 object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-100"
-                />
+<img 
+  src={client.logo} 
+  alt={`Logo de ${client.name}`}
+  className="max-w-[200px] h-auto object-contain mx-auto filter brightness-90 group-hover:brightness-110 transition-all duration-100"
+/>
               </div>
               <p className="text-center text-sm text-white/60 mt-3 group-hover:text-white/80 transition-colors duration-100">
                 {client.name}
