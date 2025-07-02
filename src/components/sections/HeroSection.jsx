@@ -17,8 +17,8 @@ const HeroSection = () => {
   return (
     <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#1a1331] via-[#140e2e] to-[#0f0c1a]">
       {/* Fondo animado de código */}
-      <div className="absolute inset-0 z-0 opacity-10 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden pointer-events-none">
-        <div className="absolute w-full h-full animate-scroll-code blur-sm text-white/30">
+      <div className="absolute inset-0 z-0 opacity-5 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden pointer-events-none">
+        <div className="absolute w-full h-full animate-scroll-code blur-[2px] text-white/10">
           {`const digital = () => {
   return "future";
 };
@@ -85,10 +85,10 @@ console.log("Construyendo soluciones...🚀");`}
       <style jsx>{`
         @keyframes scroll-code {
           0% { transform: translateY(0); }
-          100% { transform: translateY(-100%); }
+          100% { transform: translateY(-50%); }
         }
         .animate-scroll-code {
-          animation: scroll-code 30s linear infinite;
+          animation: scroll-code 60s linear infinite;
         }
       `}</style>
     </section>
