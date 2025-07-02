@@ -10,7 +10,7 @@ const ClientsSection = () => {
     { name: 'Chimeneas el chalet', logo: 'https://chimeneaselchalet.com/logo.png' },
     { name: 'ACPEF', logo: 'https://acpef.org/wp-content/uploads/2024/05/acpef-logo.png' },
     { name: 'Ligautismo', logo: 'https://ligautismo.org/logo.png' },
-    { name: 'Miacargo Logistics', logo: 'https://miacargo.com/logo.png' },
+    { name: 'Miacargo Logistics', logo: 'https://eruditus-assets.eruditus.cloud/1a7aa45ee6b636232186f74d95ec9d6b.jpg' },
     { name: 'Camacero', logo: 'https://camacero.com/logo.svg' },
     { name: 'Interior Vision Designs', logo: 'https://interiorvisiondesigns.com/logo.png' },
     { name: '+Medicos', logo: 'https://masmedicos.com/logo.svg' },
@@ -73,8 +73,8 @@ const ClientsSection = () => {
           ))}
         </div>
 
-        <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-10"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-r from-background to-transparent pointer-events-none z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-l from-background to-transparent pointer-events-none z-10"></div>
       </div>
     </section>
   );
