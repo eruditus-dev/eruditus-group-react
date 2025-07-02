@@ -11,7 +11,7 @@ const ClientsSection = () => {
     { name: 'ACPEF', logo: 'https://acpef.org/wp-content/uploads/2024/05/acpef-logo.png' },
     { name: 'Ligautismo', logo: 'https://ligautismo.org/logo.png' },
     { name: 'Miacargo Logistics', logo: 'https://eruditus-assets.eruditus.cloud/1a7aa45ee6b636232186f74d95ec9d6b.jpg' },
-    { name: 'Camacero', logo: 'https://camacero.com/logo.svg' },
+    { name: 'Camacero', logo: 'https://eruditus-assets.eruditus.cloud/83aedd3721e04f7fb559ccf3877f7d6e.jpg' },
     { name: 'Interior Vision Designs', logo: 'https://interiorvisiondesigns.com/logo.png' },
     { name: '+Medicos', logo: 'https://masmedicos.com/logo.svg' },
     { name: 'Easy2go', logo: 'https://easy2go.co/logo.png' },
