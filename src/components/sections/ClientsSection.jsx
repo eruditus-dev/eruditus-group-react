@@ -2,182 +2,79 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const ClientsSection = () => {
+  const clients = [
+    { name: 'Legis', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Legis_logo.png' },
+    { name: 'Geomatrix', logo: 'https://geomatrix.co/logo.svg' },
+    { name: 'Solfluinco', logo: 'https://solfluinco.com/logo.png' },
+    { name: 'Guio', logo: 'https://guio.com.co/logo.svg' },
+    { name: 'Chimeneas el chalet', logo: 'https://chimeneaselchalet.com/logo.png' },
+    { name: 'ACPEF', logo: 'https://acpef.org/wp-content/uploads/2024/05/acpef-logo.png' },
+    { name: 'Ligautismo', logo: 'https://ligautismo.org/logo.png' },
+    { name: 'Miacargo Logistics', logo: 'https://miacargo.com/logo.png' },
+    { name: 'Camacero', logo: 'https://camacero.com/logo.svg' },
+    { name: 'Interior Vision Designs', logo: 'https://interiorvisiondesigns.com/logo.png' },
+    { name: '+Medicos', logo: 'https://masmedicos.com/logo.svg' },
+    { name: 'Easy2go', logo: 'https://easy2go.co/logo.png' },
+    { name: 'Porteco', logo: 'https://porteco.com/logo.svg' },
+    { name: 'Textiles Unoxuno', logo: 'https://unoxuno.com.co/logo.svg' },
+    { name: 'Joserrago', logo: 'https://joserrago.com/logo.png' },
+    { name: 'Exhibidores y diseños', logo: 'https://exhibidoresydisenos.com/logo.svg' },
+    { name: 'Zonatesis', logo: 'https://zonatesis.com/logo.png' },
+    { name: 'Creativetime360', logo: 'https://creativetime360.com/logo.png' },
+    { name: 'Mamanunzia', logo: 'https://mamanunzia.com/logo.svg' },
+    { name: 'Flaminio Angulo', logo: 'https://flaminioangulo.com/logo.svg' },
+    { name: 'Alteca Calefacción', logo: 'https://alteca.com/logo.svg' },
+    { name: 'M3 Automatismos', logo: 'https://m3automatismos.com/logo.svg' },
+    { name: 'Tecsil', logo: 'https://tecsil.com/logo.png' },
+    { name: 'Atráeme', logo: 'https://atraeme.com.co/logo.png' }
+  ];
+
+  const duplicatedClients = [...clients, ...clients];
+
   return (
-    <section className="py-20 px-6">
-      <div className="container mx-auto">
+    <section className="py-20 px-2 sm:px-4 md:px-6 overflow-hidden">
+      <div className="container mx-auto max-w-6xl mb-16">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center"
         >
-          <h2 className="text-3xl font-bold text-white/80">
-            Con la confianza de empresas líderes
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent tracking-tighter">
+            Clientes que confían en nosotros
           </h2>
+          <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            Empresas y marcas que nos han elegido para llevar sus proyectos digitales al siguiente nivel
+          </p>
         </motion.div>
-        
-        <div className="relative w-full overflow-hidden" style={{ maskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent)' }}>
-          <motion.div
-            className="flex"
-            animate={{
-              x: ['-50%', '0%'],
-            }}
-            transition={{
-              ease: 'linear',
-              duration: 50,
-              repeat: Infinity,
-            }}
-          >
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Legis">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Legis" src="https://eruditus-assets.ams3.digitaloceanspaces.com/e0a51ffbbd20ed2827bc40568faa18fe.jpg
-" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Geomatrix">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Geomatrix" src="https://eruditus-assets.ams3.digitaloceanspaces.com/f6dd5e30958f3f32c8e2501e3d5c564d.jpg
-" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Solfluinco">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Solfluinco" src="https://images.unsplash.com/photo-1636114673156-052a83459fc1" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Guio">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Guio" src="https://images.unsplash.com/photo-1575821104894-b683ce7525ff" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Chimeneas el chalet">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Chimeneas el chalet" src="https://images.unsplash.com/photo-1586731214571-271df7b95cab" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="acpef">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de acpef" src="https://images.unsplash.com/photo-1689019764322-2f4d41817f60" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Ligautismo">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Ligautismo" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Miacargo Logistics">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Miacargo Logistics" src="https://images.unsplash.com/photo-1681783050350-6833746d717e" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Camacero">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Camacero" src="https://images.unsplash.com/photo-1681935833519-ad8419f9d55a" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Interior vision designs">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Interior vision designs" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="+medicos">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de +medicos" src="https://images.unsplash.com/photo-1540287731691-369d64579fcd" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Easy2go">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Easy2go" src="https://images.unsplash.com/photo-1633575071864-feffbd84723d" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Porteco">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Porteco" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Textiles Unoxuno">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Textiles Unoxuno" src="https://images.unsplash.com/photo-1505308088817-f1e3cb2a2f63" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Joserrago">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Joserrago" src="https://images.unsplash.com/photo-1513600684907-999315c1b06b" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Exhibidores y diseños">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Exhibidores y diseños" src="https://images.unsplash.com/photo-1675473086331-bfd4aebb45ac" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Zonatesis">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Zonatesis" src="https://images.unsplash.com/photo-1643101447396-81d5c65ce03f" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Creativetime360">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Creativetime360" src="https://images.unsplash.com/photo-1690900553517-0eeec3553f4f" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Mamanunzia">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Mamanunzia" src="https://images.unsplash.com/photo-1692897711480-6931f061a159" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Flaminio angulo">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Flaminio angulo" src="https://images.unsplash.com/photo-1651513358203-217d19c55cb3" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Alteca calefacción">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Alteca calefacción" src="https://images.unsplash.com/photo-1700124084147-995973b6a970" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="M3 automatismos">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de M3 automatismos" src="https://images.unsplash.com/photo-1518841252147-00cc0a43dcaf" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Tecsil">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Tecsil" src="https://images.unsplash.com/photo-1603678610745-e67e8223b697" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Atráeme">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Atráeme" src="https://images.unsplash.com/photo-1689019764322-2f4d41817f60" />
-            </div>
-            
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Legis">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Legis" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Geomatrix">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Geomatrix" src="https://images.unsplash.com/photo-1646939222913-1cba94051fe3" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Solfluinco">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Solfluinco" src="https://images.unsplash.com/photo-1636114673156-052a83459fc1" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Guio">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Guio" src="https://images.unsplash.com/photo-1575821104894-b683ce7525ff" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Chimeneas el chalet">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Chimeneas el chalet" src="https://images.unsplash.com/photo-1586731214571-271df7b95cab" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="acpef">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de acpef" src="https://images.unsplash.com/photo-1689019764322-2f4d41817f60" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Ligautismo">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Ligautismo" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Miacargo Logistics">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Miacargo Logistics" src="https://images.unsplash.com/photo-1681783050350-6833746d717e" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Camacero">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Camacero" src="https://images.unsplash.com/photo-1681935833519-ad8419f9d55a" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Interior vision designs">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Interior vision designs" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="+medicos">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de +medicos" src="https://images.unsplash.com/photo-1540287731691-369d64579fcd" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Easy2go">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Easy2go" src="https://images.unsplash.com/photo-1633575071864-feffbd84723d" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Porteco">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Porteco" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Textiles Unoxuno">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Textiles Unoxuno" src="https://images.unsplash.com/photo-1505308088817-f1e3cb2a2f63" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Joserrago">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Joserrago" src="https://images.unsplash.com/photo-1513600684907-999315c1b06b" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Exhibidores y diseños">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Exhibidores y diseños" src="https://images.unsplash.com/photo-1675473086331-bfd4aebb45ac" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Zonatesis">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Zonatesis" src="https://images.unsplash.com/photo-1643101447396-81d5c65ce03f" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Creativetime360">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Creativetime360" src="https://images.unsplash.com/photo-1690900553517-0eeec3553f4f" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Mamanunzia">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Mamanunzia" src="https://images.unsplash.com/photo-1692897711480-6931f061a159" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Flaminio angulo">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Flaminio angulo" src="https://images.unsplash.com/photo-1651513358203-217d19c55cb3" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Alteca calefacción">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Alteca calefacción" src="https://images.unsplash.com/photo-1700124084147-995973b6a970" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="M3 automatismos">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de M3 automatismos" src="https://images.unsplash.com/photo-1518841252147-00cc0a43dcaf" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Tecsil">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Tecsil" src="https://images.unsplash.com/photo-1603678610745-e67e8223b697" />
-            </div>
-            <div className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-8" title="Atráeme">
-              <img  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" alt="Logo de Atráeme" src="https://images.unsplash.com/photo-1689019764322-2f4d41817f60" />
-            </div>
-          </motion.div>
+      </div>
+
+      <div className="relative">
+        <div className="flex space-x-12 scroller">
+          {duplicatedClients.map((client, index) => (
+            <motion.div
+              key={`${client.name}-${index}`}
+              className="flex-shrink-0 group"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              <div className="w-20 h-20 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 flex items-center justify-center group-hover:bg-white/10 group-hover:border-purple-500/30 transition-all duration-300">
+                <img 
+                  src={client.logo} 
+                  alt={`Logo de ${client.name}`}
+                  className="w-12 h-12 object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-100"
+                />
+              </div>
+              <p className="text-center text-sm text-white/60 mt-3 group-hover:text-white/80 transition-colors duration-100">
+                {client.name}
+              </p>
+            </motion.div>
+          ))}
         </div>
+
+        <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-10"></div>
       </div>
     </section>
   );
