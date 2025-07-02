@@ -57,7 +57,7 @@ const ClientsSection = () => {
 <img 
   src={client.logo} 
   alt={`Logo de ${client.name}`}
-  className="max-w-[220px] h-auto aspect-[3/1] object-contain mx-auto filter brightness-90 group-hover:brightness-110 transition-all duration-100"
+  className="max-w-[220px] h-auto aspect-[3/1] object-contain mx-auto filter brightness-90 group-hover:brightness-110 transition-all duration-60"
 />
               </div>
               <p className="text-center text-sm text-white/60 mt-3 group-hover:text-white/80 transition-colors duration-100">
@@ -67,8 +67,8 @@ const ClientsSection = () => {
           ))}
         </div>
 
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-r from-background to-transparent pointer-events-none z-1"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-l from-background to-transparent pointer-events-none z-1"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-background to-transparent pointer-events-none z-20"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-background to-transparent pointer-events-none z-20"></div>
       </div>
     </section>
   );
