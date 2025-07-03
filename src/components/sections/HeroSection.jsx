@@ -15,7 +15,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#fff] via-[#140e2e] to-[#0f0c1a]">
+    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#1a1331] via-[#140e2e] to-[#0f0c1a]">
       {/* Fondo animado de código */}
       <div className="absolute inset-0 z-0 opacity-5 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden pointer-events-none">
         <div className="absolute w-full h-full animate-scroll-code blur-[2px] text-white/10">
@@ -39,7 +39,7 @@ console.log("Construyendo soluciones...🚀");`}
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <motion.h1
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tighter animated-gradient-text"
