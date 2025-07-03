@@ -15,7 +15,7 @@ const SubMenu = ({ services, closeSubMenu }) => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12">
           <div className="lg:col-span-3 mb-8 lg:mb-0">
-            <h3 className="text-pink-500 font-bold mb-4 text-sm tracking-wider uppercase">Nuestros Servicios</h3>
+            <h3 className="text-pink-300 font-bold mb-4 text-sm tracking-wider uppercase">Nuestros Servicios</h3>
             <p className="text-white/60 text-sm mb-6">
               Soluciones digitales diseñadas para impulsar tu negocio al siguiente nivel.
             </p>
