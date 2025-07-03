@@ -46,7 +46,7 @@ export const services = [
         { icon: Wrench, title: "Gestión Simplificada", description: "Administra productos, pedidos y clientes desde un panel intuitivo." },
         { icon: BarChart, title: "Análisis de Ventas", description: "Métricas detalladas para entender el comportamiento de tus clientes." }
       ],
-      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/optimizacion.svg"
+      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/ecommerce.svg"
     }
   },
   {
@@ -95,7 +95,7 @@ export const services = [
         { icon: Wrench, title: "Mejor Ranking SEO", description: "La velocidad es un factor clave para Google. Sube en los resultados de búsqueda." },
         { icon: BarChart, title: "Mayor Conversión", description: "Un sitio rápido mantiene a los usuarios enganchados y aumenta las conversiones." }
       ],
-      imageUrl: "https://eruditus-assets.eruditus.cloud/optimizacion_en_seo.jpg"
+      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/optimizacion.svg"
     }
   },
   {
