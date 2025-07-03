@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import CodeTypingBackground from './CodeTypingBackground';
 
 const HeroSection = () => {
   const { toast } = useToast();
@@ -16,26 +18,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#0e0c1d] via-[#120a26] to-[#0c0617]">
-      {/* Fondo animado de código */}
-      <div className="absolute inset-0 z-0 opacity-5 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden pointer-events-none">
-        <div className="absolute w-full h-full animate-scroll-code blur-[2px] text-white/5">
-          {`const digital = () => {
-  return "future";
-};
-
-function transform(idea) {
-  return idea + " ✨ experiencia";
-}
-
-const client = {
-  nombre: "Empresa Innovadora",
-  proyecto: "Solución Web",
-};
-
-console.log("Construyendo soluciones...🚀");`}
-        </div>
-      </div>
-
+      <CodeTypingBackground />
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <motion.h1
@@ -80,16 +63,6 @@ console.log("Construyendo soluciones...🚀");`}
           </motion.div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll-code {
-          0% { transform: translateY(0); }
-          100% { transform: translateY(-50%); }
-        }
-        .animate-scroll-code {
-          animation: scroll-code 90s linear infinite;
-        }
-      `}</style>
     </section>
   );
 };
