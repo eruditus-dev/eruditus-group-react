@@ -14,7 +14,7 @@ export const services = [
         { icon: Wrench, title: "Totalmente Personalizado", description: "Diseños y funcionalidades a medida que reflejan la identidad única de tu marca." },
         { icon: BarChart, title: "Preparado para Crecer", description: "Arquitecturas escalables que se adaptan al crecimiento de tu empresa." }
       ],
-      imageUrl: "https://eruditus-assets.eruditus.cloud/desarrollo.png"
+      imageUrl: "https://eruditus-assets.eruditus.cloud/desarrollo-a-la-medida.svg"
     }
   },
   {
