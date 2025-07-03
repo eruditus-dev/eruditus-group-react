@@ -15,7 +15,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#] via-[#140e2e] to-[#0f0c1a]">
+    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#fff] via-[#140e2e] to-[#0f0c1a]">
       {/* Fondo animado de código */}
       <div className="absolute inset-0 z-0 opacity-5 font-mono text-sm leading-relaxed whitespace-pre overflow-hidden pointer-events-none">
         <div className="absolute w-full h-full animate-scroll-code blur-[2px] text-white/10">
