@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 const codeLines = [
@@ -36,7 +37,6 @@ const CodeTypingBackground = () => {
           setLineIndex(lineIndex + 1);
         }
       } else {
-        // Reiniciar luego de una pausa
         setTimeout(() => {
           setDisplayedLines([]);
           setCharIndex(0);
