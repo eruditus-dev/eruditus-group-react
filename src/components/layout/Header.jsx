@@ -59,7 +59,7 @@ const Header = () => {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
