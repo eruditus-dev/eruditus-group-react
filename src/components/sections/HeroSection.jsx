@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#0e0c1d] via-[#120a26] to-[#0c0617]">
+    <section className="relative py-28 md:py-40 px-6 overflow-hidden bg-gradient-to-br from-[#0a0818] via-[#0e0820] to-[#080614]">
       <CodeTypingBackground />
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <Button 
               onClick={handleContactClick}
               size="lg"
-              className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)] before:animate-metallic-sheen before:z-10 before:pointer-events-none z-0"
+              className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300 hover:before:content-[''] hover:before:absolute hover:before:inset-0 hover:before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)] hover:before:animate-metallic-sheen hover:before:z-10 hover:before:pointer-events-none z-0"
             >
               <span className="relative z-20 flex items-center">
                 Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5" />
@@ -82,9 +82,11 @@ const HeroSection = () => {
             background-position: 200% center;
           }
         }
-        .before\:animate-metallic-sheen::before {
+        .hover\:before\:animate-metallic-sheen:hover::before {
           background-size: 400% auto;
-          animation: metallic-sheen 3s linear infinite;
+          animation: metallic-sheen 2.5s linear infinite;
+          background-repeat: no-repeat;
+          mix-blend-mode: screen;
         }
       `}</style>
     </section>
