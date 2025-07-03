@@ -39,8 +39,8 @@ console.log("Construyendo soluciones...🚀");`}
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: .5, y: 0 }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tighter animated-gradient-text"
           >
