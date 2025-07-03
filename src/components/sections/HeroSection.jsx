@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -48,7 +47,7 @@ const HeroSection = () => {
             <Button 
               onClick={handleContactClick}
               size="lg"
-              className="relative group overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300"
+              className="relative group overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all transition-colors duration-300"
             >
               <span className="relative z-20 flex items-center">
                 Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5" />
@@ -62,7 +61,7 @@ const HeroSection = () => {
               onClick={handleContactClick}
               variant="outline"
               size="lg"
-              className="border-white/20 text-white/80 hover:bg-white/10 hover:text-white px-8 py-6 text-base rounded-full transition-all duration-300"
+              className="border-white/20 text-white/80 hover:bg-white/10 hover:text-white px-8 py-6 text-base rounded-full transition-colors duration-300"
             >
               Ver Portfolio
             </Button>
