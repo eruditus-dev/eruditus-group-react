@@ -54,7 +54,7 @@ const ServicePage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur-xl opacity-50"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-purple-0 to-pink-600 rounded-3xl blur-xl opacity-0"></div>
                 <img  src={details.imageUrl} alt={`Ilustración del servicio de ${title}`} class="relative w-full h-auto object-cover rounded-2xl shadow-2xl" />
               </motion.div>
             </div>
