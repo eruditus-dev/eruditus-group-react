@@ -24,7 +24,7 @@ const MobileMenu = ({ isOpen, setIsOpen, services, handleContactClick }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed inset-0 bg-background/95 backdrop-blur-xl z-50 flex flex-col p-6 overflow-y-auto"
+          className="fixed inset-0 bg-background/55 backdrop-blur-xl z-50 flex flex-col p-6 overflow-y-auto"
         >
           <div className="flex items-center justify-between mb-12 flex-shrink-0">
             <Logo />
