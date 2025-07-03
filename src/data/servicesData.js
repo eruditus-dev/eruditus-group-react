@@ -46,7 +46,7 @@ export const services = [
         { icon: Wrench, title: "Gestión Simplificada", description: "Administra productos, pedidos y clientes desde un panel intuitivo." },
         { icon: BarChart, title: "Análisis de Ventas", description: "Métricas detalladas para entender el comportamiento de tus clientes." }
       ],
-      imageUrl: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f"
+      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/optimizacion.svg"
     }
   },
   {
