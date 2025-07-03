@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <>
       <header 
-        className={`sticky top-0 z-40 transition-all duration-300 ${scrolled ? 'bg-[#1e0033]/80 backdrop-blur-lg border-b border-white/10' : 'bg-transparent'}`}
+        className={`sticky top-0 z-40 transition-all duration-300 ${scrolled ? 'bg-[#1e0033]/80 backdrop-blur-lg border-b border-white/0' : 'bg-transparent'}`}
         onMouseLeave={closeSubMenu}
       >
         <nav className="container mx-auto px-6 py-4">
