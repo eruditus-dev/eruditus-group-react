@@ -30,7 +30,7 @@ export const services = [
         { icon: Wrench, title: "Adaptabilidad Total", description: "Una solución que se amolda a tus flujos de trabajo, no al revés." },
         { icon: BarChart, title: "Inteligencia de Negocio", description: "Obtén datos valiosos para tomar decisiones estratégicas." }
       ],
-      imageUrl: "https://eruditus-assets.eruditus.cloud/ecommerce.png"
+      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/optimizacion.svg"
     }
   },
   {
