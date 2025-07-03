@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -48,9 +47,11 @@ const HeroSection = () => {
             <Button 
               onClick={handleContactClick}
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:shadow-xl hover:shadow-purple-500/20 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300"
+              className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)] before:animate-metallic-sheen before:z-10 before:pointer-events-none z-0"
             >
-              Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5" />
+              <span className="relative z-20 flex items-center">
+                Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5" />
+              </span>
             </Button>
             <Button 
               onClick={handleContactClick}
@@ -63,6 +64,29 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes scroll-code {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-50%); }
+        }
+        .animate-scroll-code {
+          animation: scroll-code 90s linear infinite;
+        }
+
+        @keyframes metallic-sheen {
+          0% {
+            background-position: -200% center;
+          }
+          100% {
+            background-position: 200% center;
+          }
+        }
+        .before\:animate-metallic-sheen::before {
+          background-size: 400% auto;
+          animation: metallic-sheen 3s linear infinite;
+        }
+      `}</style>
     </section>
   );
 };
