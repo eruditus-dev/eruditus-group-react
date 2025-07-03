@@ -115,7 +115,7 @@ const ServicePage = () => {
                 </div>
               </div>
               <div className="text-center">
-                <img  alt="Diagrama de flujo de trabajo" class="w-full max-w-md mx-auto rounded-lg" src="https://images.unsplash.com/photo-1556740758-90de374c12ad" />
+                <img  alt="Diagrama de flujo de trabajo" class="w-full max-w-md mx-auto rounded-lg" src="https://eruditus-assets.eruditus.cloud/soluciones.svg" />
               </div>
             </div>
           </div>
