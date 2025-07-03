@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -23,7 +24,7 @@ const HeroSection = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tighter animated-gradient-text"
           >
             Soluciones Digitales de Vanguardia
@@ -32,7 +33,7 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
             className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto"
           >
             Transformamos ideas en experiencias digitales extraordinarias. Creamos el futuro digital de tu empresa con tecnología de punta.
@@ -41,18 +42,22 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button 
               onClick={handleContactClick}
               size="lg"
-              className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300 hover:before:content-[''] hover:before:absolute hover:before:inset-0 hover:before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)] hover:before:animate-metallic-sheen hover:before:z-10 hover:before:pointer-events-none z-0"
+              className="relative group overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-6 text-base rounded-full transition-all duration-300"
             >
               <span className="relative z-20 flex items-center">
                 Comenzar Proyecto <ArrowRight className="ml-2 h-5 w-5" />
               </span>
+              <span className="absolute inset-0 z-10 pointer-events-none">
+                <span className="absolute top-0 left-[-75%] h-full w-1/2 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12 group-hover:animate-sheen rounded-full blur-md"></span>
+              </span>
             </Button>
+
             <Button 
               onClick={handleContactClick}
               variant="outline"
@@ -74,19 +79,12 @@ const HeroSection = () => {
           animation: scroll-code 90s linear infinite;
         }
 
-        @keyframes metallic-sheen {
-          0% {
-            background-position: -200% center;
-          }
-          100% {
-            background-position: 200% center;
-          }
+        @keyframes sheen {
+          0% { left: -75%; }
+          100% { left: 125%; }
         }
-        .hover\:before\:animate-metallic-sheen:hover::before {
-          background-size: 400% auto;
-          animation: metallic-sheen 2.5s linear infinite;
-          background-repeat: no-repeat;
-          mix-blend-mode: screen;
+        .group-hover\:animate-sheen:hover .group-hover\\:animate-sheen {
+          animation: sheen 1.5s ease-in-out forwards;
         }
       `}</style>
     </section>
