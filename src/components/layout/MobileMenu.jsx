@@ -37,16 +37,16 @@ const MobileMenu = ({ isOpen, setIsOpen, services, handleContactClick }) => {
             <Link 
               to="/" 
               onClick={handleLinkClick} 
-              className="flex items-center justify-center space-x-2 text-2xl font-bold text-white hover:text-pink-500 transition-colors"
+              className="flex items-center justify-center space-x-2 text-2xl font-bold text-white hover:text-pink-300 transition-colors"
             >
               <Home className="w-6 h-6" />
               <span>Inicio</span>
             </Link>
-            <a href="/#nosotros" onClick={handleLinkClick} className="text-2xl font-bold text-white hover:text-pink-500 transition-colors">Nosotros</a>
-            <a href="/#contacto" onClick={handleLinkClick} className="text-2xl font-bold text-white hover:text-pink-500 transition-colors">Contacto</a>
+            <a href="/#nosotros" onClick={handleLinkClick} className="text-2xl font-bold text-white hover:text-pink-300 transition-colors">Nosotros</a>
+            <a href="/#contacto" onClick={handleLinkClick} className="text-2xl font-bold text-white hover:text-pink-300 transition-colors">Contacto</a>
             
             <div className="pt-6 border-t border-white/10">
-                <p className="text-pink-500 font-bold mb-4 text-sm tracking-wider">Servicios</p>
+                <p className="text-pink-300 font-bold mb-4 text-sm tracking-wider">Servicios</p>
                 <div className="flex flex-col space-y-4">
                     {services.map((service) => (
                         <Link 
