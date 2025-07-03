@@ -62,7 +62,8 @@ export const services = [
         { icon: Wrench, title: "Autoridad de Marca", description: "Conviértete en un referente en tu industria." },
         { icon: BarChart, title: "ROI Medible", description: "Estrategias basadas en datos para un retorno de inversión claro." }
       ],
-      imageUrl: "https://eruditus-assets.eruditus.cloud/optimizacion_en_seo.jpg"
+      imageUrl: "https://eruditus-assets.ams3.digitaloceanspaces.com/seo.svg
+"
     }
   },
   {
