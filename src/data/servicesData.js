@@ -183,5 +183,5 @@ export const stats = [
   { number: "500+", label: "Proyectos Completados" },
   { number: "98%", label: "Satisfacción del Cliente" },
   { number: "24/7", label: "Soporte Técnico" },
-  { number: "5+", label: "Años de Experiencia" }
+  { number: "15+", label: "Años de Experiencia" }
 ];
