@@ -76,7 +76,7 @@ const Header = () => {
             >
               <Link 
                 to="/" 
-                className="flex items-center space-x-2 text-white/70 hover:text-white transition-colors duration-300"
+                className="flex items-center space-x-2 text-white/70 hover:text-white transition-colors duration-30"
                 onClick={closeSubMenu}
               >
                 <Home className="w-4 h-4" />
